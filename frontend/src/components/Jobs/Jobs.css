@@ -1,0 +1,70 @@
+.jobs-container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #3f0071, #000);
+  color: white;
+  padding: 40px 80px;
+  font-family: "Poppins", sans-serif;
+}
+
+.jobs-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.jobs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.job-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  transition: 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.job-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #00bfff;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #008ccc;
+}
+
+button.delete {
+  background-color: #ff4d4d;
+}
+
+button.delete:hover {
+  background-color: #cc0000;
+}

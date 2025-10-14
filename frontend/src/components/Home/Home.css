@@ -1,0 +1,159 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  /* background: linear-gradient(to right, #0b1224, #511f7a); */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:linear-gradient(to right,rgb(12,23,42),rgb(88,28,135),rgb(15,23,42))
+
+}
+/* Top Bar */
+.hb-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: linear-gradient(to right, #0b1224, #511f7a); */
+  color: white;
+  padding: 15px 20px;
+  border: 1px solid rgb(88,28,135),;
+  box-shadow: 2px 2px 3px black
+}
+
+.hb-logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #b5c2bd;
+  /* margin-right: 10px; */
+  left: 0;
+  font-style: italic; 
+  /* background: #06d6a0; */
+}
+
+.hb-nav a {
+  color: rgb(201, 191, 191);
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.hb-nav a:hover {
+  text-decoration: underline;
+}
+
+.post-btn {
+  background-color: #06d6a0;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.post-btn:hover {
+  background-color: #05b587;
+}
+
+/* Hero */
+.hb-hero {
+  text-align: center;
+  padding:  10px;
+  /* background-color: #f5f5f5; */
+}
+.hb-hero-left{
+  margin-Top:"0px";display:"flex" ;align-Items: "center"; 
+      justify-Content:"center";flex-Direction:"column";gap:"5px";
+}
+.hb-hero h1 {
+  font-Size: "20px";font-Weight:"bold"; 
+  margin: 0%;
+  color:gray;
+}
+
+.hb-hero p {
+  font-size: 18px;
+  color: rgb(121, 117, 117);
+}
+.hb-cta-row {
+  margin-top: 20px;
+}
+
+.upload-btn {
+  background-color: #00d395;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 10px;
+  margin-left: 3px;
+}
+.upload-btn:hover {
+  background-color: #00b67a;
+}
+
+
+button.primary {
+  background: #06d6a0;
+  border: none;
+  padding: 10px 10px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  /* margin-right: 10px; */
+  font-size: 10px;
+}
+
+button.primary:hover {
+  background: #52b89c;
+}
+
+a.secondary {
+  color: #06d6a0;
+  font-weight: bold;
+}
+
+/* Search Section */
+.hb-search {
+  text-align: center;
+  margin: 12px auto;
+  width: 100%;
+  /* background: #5a5d64; */
+}
+
+.hb-search input,
+.hb-search select {
+  padding: 5px;
+  margin: 1px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.hb-search button {
+  background: #06d6a0;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Footer */
+.hb-footer {
+  text-align: center;
+  padding: 10px;
+  background: #0b1224;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  z-index: 1000;
+}
