@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { postJob } from "../../api/api"; // ensure this function exists
 import { postJob } from '../api/api';
 
 import { useNavigate } from "react-router-dom";
