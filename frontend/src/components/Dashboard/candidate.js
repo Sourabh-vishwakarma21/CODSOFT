@@ -11,7 +11,19 @@ export default function Candidate() {
     setLoading(true);
     getJobs()
       .then((res) => {
-        setJobs(res.data || []);
+        if (res && res.data) {
+          if (Array.isArray(res.data.jobs)) {
+            setJobs(res.data.jobs);
+          } else if (Array.isArray(res.data)) {
+            setJobs(res.data);
+          } else {
+            setJobs([]);
+          }
+        } else {
+          setJobs([]);
+        }
+        
+
       })
       .catch((err) => console.error("Error fetching jobs:", err))
       .finally(() => setLoading(false));
